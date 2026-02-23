@@ -37,7 +37,7 @@ export const Intro: FC = () => {
                     </div>
 
                     <h1 className="text-7xl font-black italic tracking-tighter uppercase text-white mb-4">
-                        HeliPilot <span className="text-blue-500 not-italic">v1.2</span>
+                        Helicopter Pilot <span className="text-blue-500 not-italic">v1.2</span>
                     </h1>
                     <p className="text-slate-400 text-xl font-medium max-w-2xl mx-auto leading-relaxed">
                         Experience advanced helicopter flight dynamics and emergency response tactical training.

@@ -7,7 +7,7 @@ import { Level2 } from '@/pages/Level2';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/user/gamified/Helicopter-Pilot">
       <GameProvider>
         <SoundProvider>
           <Routes>

@@ -5,6 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/user/gamified/Helicopter-Pilot/',
   plugins: [
     react(),
     tailwindcss(),
