@@ -1,5 +1,5 @@
 import { type FC, useState, useEffect, useCallback } from 'react';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {
     AlertTriangle,
     BookOpen,
@@ -19,7 +19,7 @@ import { useSound } from '@/contexts/SoundContext';
 import { SCENARIOS } from '@/data/scenarios';
 
 export const Level2: FC = () => {
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
     const { stopSounds, playWarningSound } = useSound();
     const [currentScenarioIndex, setCurrentScenarioIndex] = useState(0);
     const [safetyScore, setSafetyScore] = useState(100);
@@ -271,11 +271,15 @@ export const Level2: FC = () => {
                                             <h2 className="text-4xl font-black text-white italic uppercase tracking-tighter mb-2">Mission Success</h2>
                                             <p className="text-emerald-400 font-bold uppercase tracking-widest text-sm mb-8">All emergencies handled with tactical precision</p>
                                             <button
-                                                onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
-                                                className="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto"
+                                                onClick={() => navigate('/')}
+                                                className="mb-4 px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto"
                                             >
                                                 <Home size={18} />
                                                 Return Home
+                                            </button>
+                                            <button onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
+                                                className="px-10 py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(239,68,68,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto">
+                                                Quit
                                             </button>
                                         </div>
                                     ) : (
@@ -291,12 +295,9 @@ export const Level2: FC = () => {
                                             >
                                                 Retry Mission
                                             </button>
-                                            <button
-                                                onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
-                                                className="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto"
-                                            >
-                                                <Home size={18} />
-                                                Return Home
+                                            <button onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
+                                                className="px-10 py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(239,68,68,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto">
+                                                Quit
                                             </button>
                                         </div>
                                     )}
