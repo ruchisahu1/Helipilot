@@ -271,7 +271,7 @@ export const Level2: FC = () => {
                                             <h2 className="text-4xl font-black text-white italic uppercase tracking-tighter mb-2">Mission Success</h2>
                                             <p className="text-emerald-400 font-bold uppercase tracking-widest text-sm mb-8">All emergencies handled with tactical precision</p>
                                             <button
-                                                onClick={() => navigate('/')}
+                                                onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
                                                 className="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto"
                                             >
                                                 <Home size={18} />
@@ -287,9 +287,16 @@ export const Level2: FC = () => {
                                             <p className="text-red-400 font-bold uppercase tracking-widest text-sm mb-8">Airframe integrity compromised or safety standards not met</p>
                                             <button
                                                 onClick={() => window.location.reload()}
-                                                className="px-10 py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(239,68,68,0.3)] hover:scale-105 active:scale-95"
+                                                className="mb-4 px-10 py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(239,68,68,0.3)] hover:scale-105 active:scale-95"
                                             >
                                                 Retry Mission
+                                            </button>
+                                            <button
+                                                onClick={() => window.location.href = "https://missionx.junkbot.co/user/gamified"}
+                                                className="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(16,185,129,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto"
+                                            >
+                                                <Home size={18} />
+                                                Return Home
                                             </button>
                                         </div>
                                     )}
