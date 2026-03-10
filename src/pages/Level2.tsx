@@ -290,7 +290,7 @@ export const Level2: FC = () => {
                                             <h2 className="text-4xl font-black text-white italic uppercase tracking-tighter mb-2">Flight Failure</h2>
                                             <p className="text-red-400 font-bold uppercase tracking-widest text-sm mb-8">Airframe integrity compromised or safety standards not met</p>
                                             <button
-                                                onClick={() => window.location.reload()}
+                                                onClick={() => location.reload()}
                                                 className="mb-4 px-10 py-4 bg-red-600 hover:bg-red-500 text-white font-black uppercase tracking-widest rounded transition-all shadow-[0_0_30px_rgba(239,68,68,0.3)] hover:scale-105 active:scale-95"
                                             >
                                                 Retry Mission
