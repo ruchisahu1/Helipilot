@@ -1,5 +1,5 @@
 import { type FC, useState, useEffect, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 import {
     AlertTriangle,
     BookOpen,
@@ -19,7 +19,7 @@ import { useSound } from '@/contexts/SoundContext';
 import { SCENARIOS } from '@/data/scenarios';
 
 export const Level2: FC = () => {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     const { stopSounds, playWarningSound } = useSound();
     const [currentScenarioIndex, setCurrentScenarioIndex] = useState(0);
     const [safetyScore, setSafetyScore] = useState(100);
